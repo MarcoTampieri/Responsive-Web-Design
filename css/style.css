@@ -1,0 +1,35 @@
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+    body #medium {
+        display: none;
+    }
+    body #large {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: green;
+    }
+    body #large {
+        display: none;
+    }
+    body #small {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: blue;
+    }
+    body #small {
+        display: none;
+    }
+    body #medium {
+        display: none;
+    }
+}

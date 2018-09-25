@@ -1,35 +1,21 @@
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: red;
-    }
-    body #medium {
-        display: none;
-    }
-    body #large {
-        display: none;
-    }
+[class*="col-"] {
+    float: left;
 }
 
-@media only screen and (min-width: 600px) {
-    body {
-        background-color: green;
-    }
-    body #large {
-        display: none;
-    }
-    body #small {
-        display: none;
-    }
+@media only screen and (max-width: 600px) {
+   [class*="col-"] {
+       width: 100%;
+   }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .col-1 { width: 66%;}
+    .col-2 { width: 33%;}
+    .col-3 { width: 100%;}
 }
 
 @media only screen and (min-width: 768px) {
-    body {
-        background-color: blue;
-    }
-    body #small {
-        display: none;
-    }
-    body #medium {
-        display: none;
-    }
+    .col-1 { width: 33%;}
+    .col-2 { width: 33%;}
+    .col-3{ width: 33%;}
 }
